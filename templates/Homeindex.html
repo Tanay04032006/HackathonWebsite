@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Hackathon Website</title>
+    <link rel="stylesheet" href="css/Homestyle.css">
+    <script defer src="src/LSindex.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Hackathon Website</h1>
+    </header>
+
+    <nav>
+        <a href="#community" id="community-link">Community</a>
+        <a href="#about-us">About Us</a>
+        <a href="#hackathons">Hackathons</a>
+        <a href="#score-judging">Score Judging</a>
+    </nav>
+
+    <div class="container">
+        <section id="welcome">
+            <h2>Welcome to our Hackathon Website</h2>
+            <p>This is a place where you can find information about upcoming hackathons, connect with the community, and learn about our scoring and judging process.</p>
+        </section>
+
+        <section id="cta">
+            <h2>Join our next Hackathon!</h2>
+            <p>Get ready to showcase your skills and collaborate with other passionate developers. Stay tuned for updates on upcoming hackathons.</p>
+            <a href="#hackathons" class="button">View Hackathons</a>
+        </section>
+
+        <section id="community">
+            <h2>Community</h2>
+            <p>Connect with like-minded individuals, share ideas, and stay updated on the latest trends in the tech community.</p>
+            <!-- Add more community content as needed -->
+        </section>
+    </div>
+
+    <!-- Add more sections for About Us and Score Judging as needed -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var communityLink = document.getElementById("community-link");
+    
+        if (communityLink) {
+            communityLink.addEventListener("click", function (event) {
+                event.preventDefault();
+                
+                window.location.href = "./index.html";
+            });
+        }
+    });
+</script>
+</body>
+</html>
